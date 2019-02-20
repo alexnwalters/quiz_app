@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Quiz App</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+13px" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<h1 class="ultra">Name That State!</h1>
+		<h2 class="ultra">The Quiz Show About US States</h2>
+	</header>
+
+	<main class="js-gameboard">
+		<div class="quiz-display slabo">
+			<ul>
+				<li class="js-round">Round:</li>
+				<li class="js-score">Score:</li>
+			</ul>
+		</div>
+
+		<div class="quiz-tv js-quiz-tv">
+			<img src="images/crowd_giphy.gif" alt="Clapping Studio Audience">
+        </div>
+
+        <div>
+            <form class="js-quiz-form slabo hide">
+                <fieldset>
+                </fieldset>
+            </form>
+        </div>
+
+        <div>
+            <form id="js-game-button">
+                <button type="submit" class="game-button ultra js-start-button">Start the Show</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
