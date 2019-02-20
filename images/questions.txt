@@ -1,0 +1,69 @@
+[
+  { question: 'Which state is home to the easternmost capital city in the US?',
+    options: ['Maine', 'Florida', 'North Carolina', 'Massachusetts'],
+    answer: 'Maine',
+    correct: ['https://media.giphy.com/media/XwGVf8gQqt5rG/giphy.gif', 'answer yes'],
+    wrong: ['https://media.giphy.com/media/cyQ9PLf3mkNHO/giphy.gif', 'answer no'],
+    feedback: 'Augusta, the capital of Maine is the easternmost state capital.'
+  },
+  { question: 'Which state waves the flag shown below?<br><img src="images/Ohio.jpg" alt="State flag of Ohio">',
+    options: ['Oregon', 'Ohio', 'Wisconsin', 'Oklahoma'],
+    answer: 'Ohio',
+    correct: ['https://media.giphy.com/media/26FPnsRww5DbqoPuM/giphy.gif', 'correct answer'],
+    wrong: ['https://media.giphy.com/media/3E2bWhHRGbqRVq5TnB/giphy.gif', 'wrong answer'],
+    feedback: 'Known as a Brugee, Ohio hosts the only non-rectangular flag in the US.'
+  },
+  { question: 'Along with the state of Rhode Island, this state is the only other to never ratify the 18th Amendment',
+    options: ['West Virginia', 'Kentucky', 'Connecticut', 'New Jersey'],
+    answer: 'Connecticut',
+    correct: ['https://media.giphy.com/media/rDM47x7xzNynu/giphy.gif', 'nod yes'],
+    wrong: ['https://media.giphy.com/media/fV2nYFD3akDuTUgVhy/giphy.gif', 'incorrect'],
+    feedback: 'Connecticut, along with Rhode Island never officially signed Prohibition into law.'
+  },
+  { question: 'Featured on the back of its state flag, the beaver is the state animal of which state?<br><img src="images/oregon-flag.gif" alt="State flag of Oregon">',
+    options: ['Washington', 'North Dakota', 'Oregon', 'Idaho'],
+    answer: 'Oregon',
+    correct: ['https://media.giphy.com/media/XwGVf8gQqt5rG/giphy.gif', 'answer yes'],
+    wrong: ['https://media.giphy.com/media/cyQ9PLf3mkNHO/giphy.gif', 'answer no'],
+    feedback: 'The state flag of Oregon is the only state flag with different symbols on each side.',
+  },
+  { question: 'The city of Hershey is known as the Chocolate Capital of the US, and is found in which state?',
+    options: ['Indiana', 'Pennsylvania', 'Vermont', 'Georgia'],
+    answer: 'Pennsylvania',
+    correct: ['https://media.giphy.com/media/26FPnsRww5DbqoPuM/giphy.gif', 'correct answer'],
+    wrong: ['https://media.giphy.com/media/3E2bWhHRGbqRVq5TnB/giphy.gif', 'wrong answer'],
+    feedback: 'Although Pennsylvania\'s state capital is Harrisburg, Hershey isn\'t bitter, wink.'
+  }
+{ question: 'Which state is the smallest state in the U.S.?',
+options: ['New Hampshire', 'Delaware', 'Hawaii', 'Rhode Island'],
+answer: 'Rhode Island',
+correct: ['https://media.giphy.com/media/rDM47x7xzNynu/giphy.gif', 'nod yes'],
+wrong: ['https://media.giphy.com/media/fV2nYFD3akDuTUgVhy/giphy.gif', 'incorrect'],
+feedback: 'At a size of 1,212 square miles, Rhode Island is the smallest US state.'
+}
+{ question: 'Which state has the smallest population in the U.S.?',
+options: ['Maryland', 'North Dakota', 'Vermont', 'Wyoming'],
+answer: 'Wyoming',
+correct: ['https://media.giphy.com/media/XwGVf8gQqt5rG/giphy.gif', 'answer yes'],
+wrong: ['https://media.giphy.com/media/cyQ9PLf3mkNHO/giphy.gif', 'answer no'],
+feedback: 'Even though Wyoming is ten times the size of Vermont, its population is about 50,000 less.'
+}
+{ question: 'Which state is home to the southernmost capital city in the U.S.?',
+options: ['Hawaii', 'Louisiana', 'Texas', 'Florida'],
+answer: 'Hawaii',
+correct: ['https://media.giphy.com/media/26FPnsRww5DbqoPuM/giphy.gif', 'correct answer'],
+wrong: ['https://media.giphy.com/media/3E2bWhHRGbqRVq5TnB/giphy.gif', 'wrong answer'],
+feedback: 'Hawaii's capital city of Honolulu, is not only the southernmost capital but also the westernmost.'
+}
+{ question: 'Which state features the highest mountain peak in the U.S.?',
+options: ['Colorado', 'Washington', 'Alaska', 'Utah'],
+answer: 'Alaska',
+correct: ['https://media.giphy.com/media/rDM47x7xzNynu/giphy.gif', 'nod yes'],
+wrong: ['https://media.giphy.com/media/fV2nYFD3akDuTUgVhy/giphy.gif', 'incorrect'],
+feedback: 'Denali, also know as Mount McKinley, found in the Alaska Range is the highest peak in the U.S.'
+}
+]
+
+
+
+
