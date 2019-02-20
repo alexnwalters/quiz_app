@@ -1,140 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  background: url(images/retro-background-pattern.jpg);
-  height: 100%;
+background: url(images/retro-background-pattern.jpg);
+height: 100%;
 }
 
 body {
-  background: rgba(254, 238, 202, 0.5);
-  height: 100vmax;
-  text-align: center;
-  padding-top: 40px;
+background: rgba(254, 238, 202, 0.5);
+height: 100vh;
+text-align: center;
+padding-top: 40px;
 }
 
 h1, h2 {
-  margin-bottom: 20px;
-  text-shadow: 2px 2px #feeeca,
-              -2px 2px #feeeca,
-              2px -2px #feeeca,
-              -2px -2px #feeeca;
+margin-bottom: 20px;
+text-shadow: 2px 2px #feeeca,
+            -2px 2px #feeeca,
+            2px -2px #feeeca,
+            -2px -2px #feeeca;
 }
 
 .ultra {
-  font-family: 'ultra', serif;
-  font-weight: normal;
-  color: #600060;
+font-family: 'ultra', serif;
+font-weight: normal;
+color: #600060;
 }
 
 .slabo {
-  font-family: 'Slabo 13px', serif;
-  color: #600060;
-  font-size: 16px;
-  font-weight: bold;
+font-family: 'Slabo 13px', serif;
+color: #600060;
+font-size: 16px;
+font-weight: bold;
 }
 
 ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  list-style-type: none;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+list-style-type: none;
 }
 
 li, .game-button, .quiz-tv, .quiz-form  {
-  margin-bottom: 20px;
-  background-color: #feeeca;
-  border: 2px solid #600060;
-  border-radius: 8px;
-  padding: 10px 24px;
-  width: fit-content;
+margin-bottom: 20px;
+background-color: #feeeca;
+border: 2px solid #600060;
+border-radius: 8px;
+padding: 10px 24px;
+width: fit-content;
 }
 
 .quiz-tv, .quiz-form {
-  margin-right: auto;
-  margin-left: auto;
+margin-right: auto;
+margin-left: auto;
 }
 
 .submit-button {
-  text-align: center;
+text-align: center;
 }
 
 form {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 650px;
-  border: none;
+margin-right: auto;
+margin-left: auto;
+max-width: 650px;
+border: none;
 }
 
 fieldset {
-  border: none;
-  text-align:left;
+border: none;
+text-align:left;
 }
 
 .state-container {
-  display: inline-block; 
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-  margin-top: 15px;
-  padding-left: 30px;
+display: inline-block; 
+position: relative;
+cursor: pointer;
+user-select: none;
+margin-top: 15px;
+padding-left: 30px;
 }
 
 .state-container input {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  left: 0;
-  top: 0; 
+display: inline-block;
+width: 20px;
+height: 20px;
+position: absolute;
+left: 0;
+top: 0; 
 }
 
 .state-container .circle {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #feeeca;
-  border: 2px solid #600060;
-  border-radius: 8px;
-  position: absolute;
-  left: 0;
-  top: 0; 
+display: inline-block;
+width: 20px;
+height: 20px;
+background-color: #feeeca;
+border: 2px solid #600060;
+border-radius: 8px;
+position: absolute;
+left: 0;
+top: 0; 
 }
 
 .state-container:hover .circle {
-  background-color: #600060;
+background-color: #600060;
 }
 
 .state-container input:checked + .circle {
-  background-color: #600060;
+background-color: #600060;
 }
 
 .hide {
-  display: none;
+display: none;
 }
 
 @media screen and (max-width: 680px) {
-  .quiz-tv img, .quiz-tv p, .quiz-form {
-    width: 80vw;
-  }
+.quiz-tv img, .quiz-tv p, .quiz-form {
+  width: 80vw;
+}
 
-  .quiz-form img {
-    width: 60vw;
-  }
+.quiz-form img {
+  width: 60vw;
+}
 
-  .quiz-tv, .quiz-form { 
-    margin-right: auto;
-    margin-left: auto;
-  }
+.quiz-tv, .quiz-form { 
+  margin-right: auto;
+  margin-left: auto;
+}
 
-  h2 {
-    font-size: 16px;
-    text-shadow: 1px 1px #feeeca,
-              -1px 1px #feeeca,
-              1px -1px #feeeca,
-              -1px -1px #feeeca;
-  }
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 16px;
+  text-shadow: 1px 1px #feeeca,
+            -1px 1px #feeeca,
+            1px -1px #feeeca,
+            -1px -1px #feeeca;
+}
+}
+
+@media screen and (max-width: 415px) {
+h1 { 
+  font-size: 20px;
+}
+
+h2 {
+  display: none;
+}
+
+li, .game-button, .quiz-tv, .quiz-form  {
+  margin-bottom: 10px;
+  background-color: #feeeca;
+  border: 2px solid #600060;
+  border-radius: 8px;
+  padding: 5px 12px;
+  width: fit-content;
+}
 }
