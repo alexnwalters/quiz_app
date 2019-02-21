@@ -97,7 +97,6 @@ function handleStartShow() {
     changeToSubmitButton();
     addRound();
     updateDisplay();
-    console.log('`handleStartShow` ran');
   });
 }
 
@@ -105,20 +104,17 @@ function handleStartShow() {
 function changeRounds() {
   $('main').find('.js-quiz-tv').toggleClass('hide');
   $('main').find('.js-quiz-form').toggleClass('hide');
-  console.log('`changeRounds` ran');
 }
 
 //delete existing button, create a submit button
 function changeToSubmitButton() {
   $('button').remove();
   $('fieldset').append(`<div class="submit-button"><button type="submit" class="game-button ultra">Submit Answer</button></div>`);
-  console.log('`changeToSubmitButton` ran');
 }
 
 //handles click of submit button
 function handleSubmitButton() {
   $('form').on('submit', function(event) {
-  console.log('`handleSubmitButton` ran');
   event.preventDefault();
   //determine if next button or results button
   if (round < STORE.length) {
@@ -131,7 +127,6 @@ function handleSubmitButton() {
     changeRounds();
     checkAnswer();
   };
-  console.log('`handleSubmitButton` ran');
   });
 }
 
@@ -139,7 +134,6 @@ function handleSubmitButton() {
 function updateDisplay() {
   $('ul').find('.js-round').text('Round: ' + round);
   $('ul').find('.js-score').text('Score: ' + score);
-  console.log('`updateDisplay` ran')
 }
 
 //adds quiz form containing question
@@ -173,7 +167,6 @@ function loadQuizQuestion() {
 function changeToNextButton() {
   $('button').remove();
   $('#js-game-button').append(`<button type="submit" class="game-button ultra js-next-button">Next Round</button>`);
-  console.log('`changeToNextButton` ran');
 }
 
 //checks user input vs correct answer
@@ -188,9 +181,6 @@ function checkAnswer() {
     else {
       wrongAnswerFeedback();
     }
-    console.log(usersChoice);
-    console.log(correctAnswer);
-    console.log('`checkAnswer` ran');
 }
 
 //give correct answer feedback
@@ -200,7 +190,6 @@ function correctAnswerFeedback() {
     <div><img src=${STORE[round - 1].correct[0]} alt=${STORE[round - 1].correct[1]}></div>
     <div><p class="slabo">${STORE[round - 1].feedback}</p></div>`
   );
-  console.log('`correctAnswerFeedback` ran');
 }
 
 //give wrong answer feedback
@@ -210,7 +199,6 @@ function wrongAnswerFeedback() {
     <div><img src=${STORE[round - 1].wrong[0]} alt=${STORE[round - 1].wrong[1]}></div>
     <div><p class="slabo">${STORE[round - 1].feedback}</p></div>`
   );
-  console.log('`wrongAnswerFeedback` ran');
 }
 
 //handles click of next button, loads next question 
@@ -222,7 +210,6 @@ function handleNextButton() {
     changeToSubmitButton();
     addRound();
     updateDisplay();
-    console.log('`handleNextButton` ran');
   });  
 }
 
@@ -230,7 +217,6 @@ function handleNextButton() {
 function changeToResultsButton() {
   $('button').remove();
   $('#js-game-button').append(`<button type="submit" class="game-button ultra js-results-button">Show Quiz Results</button>`);
-  console.log('`changeToResultsButton` ran');
 }
 
 //handles click of Results Button, changes to final results page
@@ -240,7 +226,6 @@ function handleResultsButton() {
     changeToRestartButton();
     loadQuizResults();
     updateDisplay();
-    console.log('`handleResultsButton` ran');
   });
 }
 
@@ -248,7 +233,6 @@ function handleResultsButton() {
 function changeToRestartButton() {
   $('button').remove();
   $('#js-game-button').append(`<button type="submit" class="game-button ultra js-restart-button">Restart the Show</button>`);
-  console.log('`changeToRestartButton` ran');
 }
 
 //handles click of restart, reloads page
@@ -282,7 +266,6 @@ function loadQuizResults() {
     <div><p class="slabo">That wasn't good, we should just start over.</p></div>`
   );
   }
-  console.log('`loadQuizResults` ran');
 }
 
 //calls button functions that will later be run on user click
